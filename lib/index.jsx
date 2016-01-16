@@ -1,8 +1,12 @@
 import './style.css!';
-import React from 'react';
+import React from 'react'
 
-export default class Component extends React.component {
-  render() {
-    return <div>Hello {this.props.name}</div>;
-  }
+export default class Component {
+    constructor(name) {
+        this.name = name
+        console.log('component', this)
+    }
+    view() {
+        return <div></div>
+    }
 }
